@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MaxAI 🧠</title>
+  <link rel="icon" href="https://em-content.zobj.net/source/microsoft-teams/363/brain_1f9e0.png" type="image/png" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Welcome to MaxAI</h1>
+    <div class="input-row">
+      <input type="text" id="userInput" placeholder="What is MaxAI?" onkeydown="if(event.key==='Enter') handlePrompt()" />
+      <button class="send-btn" onclick="handlePrompt()">⩥</button>
+    </div>
+    <div id="output" class="response"></div>
+    <div class="small">Ask me anything and I’ll do my best to help.</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
